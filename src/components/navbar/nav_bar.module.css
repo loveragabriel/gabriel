@@ -1,0 +1,21 @@
+.ul{
+    display: none;
+    list-style-type: none;
+}
+
+.menu_icon{
+    width: 10px;
+}
+
+.link{
+    padding: 10px;
+}
+
+@media (min-width:500px){
+    .ul{
+        display:flex;
+    }
+    .menu_icon{
+        display: none;
+    }
+}
