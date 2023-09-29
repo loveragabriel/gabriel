@@ -1,9 +1,13 @@
 import style from './nav_bar.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { faBars, faUser, faLaptop, faEnvelope} from "@fortawesome/free-solid-svg-icons";
+import Link from 'next/link';
 
-
-const enlaces = ['Sobre mi', 'Proyectos', 'Conatcto']
+const enlaces = [
+    { name: 'Sobre mi', link: 'about', icon: faUser },
+    { name: 'Proyectos', link: 'myprojects', icon: faLaptop },
+    { name: 'Contacto', link: 'contact', icon: faEnvelope }
+  ];
 
 export default function NavBar (){
 
@@ -14,7 +18,9 @@ export default function NavBar (){
         <ul className={style.ul}>
             {
                 enlaces.map((link, index)=>
-                    <li key={index} className={style.link}>{link}</li>
+                <Link key={index} href={`/${link.link}`}>
+                        <FontAwesomeIcon  icon={link.icon} className={style.link_icon} />
+                        </Link>
                 )
             }
         </ul>
