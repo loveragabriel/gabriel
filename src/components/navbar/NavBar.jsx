@@ -12,9 +12,7 @@ const enlaces = [
 export default function NavBar (){
 
     return(
-        <nav>
-                        <FontAwesomeIcon icon={faBars} className={style.menu_icon} />
-
+        <nav className={style.nav_bar}>
         <ul className={style.ul}>
             {
                 enlaces.map((link, index)=>
@@ -24,6 +22,12 @@ export default function NavBar (){
                 )
             }
         </ul>
+        <p className={style.main_h1}>
+        <Link href='/' className={style.name_link}>
+        Home
+        </Link>
+        </p>
+       
         </nav>
 
     )
