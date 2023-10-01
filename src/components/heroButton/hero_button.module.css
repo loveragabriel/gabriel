@@ -2,7 +2,7 @@
     cursor: pointer;
     border-radius: 50px;
     border: solid 0.3px white;
-    width: 30%;
+    width: 40%;
     background-color: transparent; /* Set background color to transparent */
     color: blue;
     transition: .2s;
@@ -24,4 +24,15 @@
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
+  }
+
+  @media (min-width:400px){
+    .button{
+        width: 30%;
+    }
+  }
+  @media (min-width:1000px){
+    .button{
+        width: 20%;
+    }
   }
