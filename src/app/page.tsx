@@ -8,6 +8,9 @@ export default function Home() {
         <span className={styles.text_name}>Gabriel Lovera</span>
          <span className={styles.text_title}>Desarrollador React</span>
       </h1>
+      <section>
+        Diseño y desarrollo de interfaces de usuario. Aprendo, programo e itero.
+      </section>
     </main>
   )
 }
