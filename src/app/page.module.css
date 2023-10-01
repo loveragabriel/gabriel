@@ -1,31 +1,81 @@
-.main{
-
+.main {
+  /* Your main styles here */
 }
 
-.main_text{
+/* Animation */
+.main_text {
   display: flex;
   flex-direction: column;
   font-size: 2rem;
+  letter-spacing: 1px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.text_name{
+/* First */
+.text_name {
   padding-top: 2rem;
   text-align: start;
-
+  z-index: 1;
+  position: relative;
+  transform: translateX(-100%); /* Initially, hide the text name off-screen to the left */
+  animation: slideInName 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 
-.text_title{
+/* Second */
+.text_title {
+  z-index: -1;
+  opacity: 0; /* Initially, hide the title */
+  transform: translateY(-100%); /* Initially, hide the title off-screen above */
+  animation: slideInTitle 2.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 1s;
   color: orange;
 }
 
-@media (min-width:400px){
-  .main_text{
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInName {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  50% {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 400px) {
+  .main_text {
     font-size: 4rem;
   }
 }
 
-@media (min-width:1000px){
-  .main_text{
+@media (min-width: 1000px) {
+  .main_text {
     font-size: 5rem;
   }
 }
