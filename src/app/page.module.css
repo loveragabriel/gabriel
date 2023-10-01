@@ -14,7 +14,7 @@
 
 /* First */
 .text_name {
-  padding-top: 2rem;
+  padding-top: 1.3rem;
   text-align: start;
   z-index: 1;
   position: relative;
@@ -89,12 +89,136 @@
   }
 }
 
+
+
+/* Description Animation */
+
+.text_description {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  opacity: 0; /* Start with the entire text block hidden */
+  animation: fadeIn 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 1s; /* Delay the entire block animation */
+}
+
+.text_description span {
+  margin-right: 5px;
+  transform: translateY(-100%); /* Initially, hide the text elements off-screen above */
+  opacity: 0; /* Initially, hide the text elements */
+}
+
+/* Adjust animation delay for each element */
+.text_1 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2s; /* Delay the animation of the first word */
+}
+
+.text_2 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.2s; /* Delay the animation of the second word */
+}
+
+.text_3 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.3s; /* Delay the animation of the third word */
+}
+.text_4 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.4s; /* Delay the animation of the third word */
+}
+.text_5 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.5s; /* Delay the animation of the third word */
+}
+.text_6 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.6s; /* Delay the animation of the third word */
+}
+.text_7 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.7s; /* Delay the animation of the third word */
+}
+.text_8 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.8s; /* Delay the animation of the third word */
+}
+.text_9 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 2.9s; /* Delay the animation of the third word */
+}
+.text_10 {
+  animation: slideUp 1s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation-delay: 3s; /* Delay the animation of the third word */
+}
+
+/* Add more text elements and adjust their delays as needed */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(80%);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(70%);
+    opacity: 0.1;
+  }
+  20% {
+    transform: translateY(60%);
+    opacity: 0.2;
+  }
+  30% {
+    transform: translateY(50%);
+    opacity: 0.3;
+  }
+  40% {
+    transform: translateY(40%);
+    opacity: 0.4;
+  }
+  50% {
+    transform: translateY(30%);
+    opacity: 0.5;
+  }
+  60% {
+    transform: translateY(20%);
+    opacity: 0.6;
+  }
+  70% {
+    transform: translateY(10%);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateY(5%);
+    opacity: 0.8;
+  }
+  90% {
+    transform: translateY(2%);
+    opacity: 0.9;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+
 @media (min-width: 400px) {
   .main_text {
     font-size: 4rem;
   }
   .button_call_to_action{
     width: 45%;
+  }
+  .text_description{
+    font-size: 1.5rem;
   }
 }
 
