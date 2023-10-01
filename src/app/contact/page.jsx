@@ -1,5 +1,9 @@
+import Title from '@/components/pageTitle/Title'
 export default function Contact(){
     return(
-        <p>This is Contact</p>
+        <>
+        <Title Title='Contact'/>
+                <p>This is Contact</p>
+        </>
     )
 }

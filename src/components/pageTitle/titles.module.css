@@ -1,0 +1,45 @@
+.main {
+    font-size: 2rem;
+    margin-left: 1rem;
+    animation: ttlTranslate 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(100%);
+}
+
+.title_background {
+    position: absolute;
+    z-index: -1;
+    font-weight: 900;
+    font-size: 2rem;
+    opacity: 0.2;
+    top: 4.5rem;
+    animation: bkgTranslate 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    transform: translateX(100%);
+    color: aqua;
+}
+
+@keyframes bkgTranslate {
+    0% {
+        opacity: 0.5;
+        transform: translateX(50%) scale(2.2);
+    }
+    50% {
+        opacity: 0.3;
+        transform: translateX(30%) scale(2);
+    }
+    100% {
+        opacity: 0.1;
+        transform: translateX(0%) scale(1);
+    }
+}
+
+@keyframes ttlTranslate {
+    0% {
+        transform: translateX(40%);
+    }
+    50% {
+        transform: translateX(15%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
