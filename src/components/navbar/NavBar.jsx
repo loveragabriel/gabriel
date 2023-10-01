@@ -22,7 +22,7 @@ export default function NavBar (){
                 )
             }
         </ul>
-        <p className={style.main_h1}>
+        <p className={style.home_link}>
         <Link href='/' className={style.name_link}>
         Home
         </Link>

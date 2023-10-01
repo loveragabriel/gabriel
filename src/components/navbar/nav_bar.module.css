@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0.5rem;
 }
 
 .ul {
@@ -10,8 +9,8 @@
     list-style-type: none;
 }
 
-.main_h1{
-    padding: 0 10px;
+.home_link{
+    padding: 0 20px;
     font-weight: 400;
 }
 
@@ -25,11 +24,14 @@
 
 
 .link_icon {
+    display: flex;
+    justify-content: start;
     width: 25px;
-    height: 20px;
+    height: 15px;
     padding: 0 10px;
     cursor: pointer;
     font-weight: 300;
+    color:  white;
 }
 
 .link_icon:hover {
