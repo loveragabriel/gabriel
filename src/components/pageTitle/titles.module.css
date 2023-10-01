@@ -1,4 +1,9 @@
-.main {
+.title_container{
+    position: sticky;
+    top: 3rem;
+    background-color: black;
+}
+.main_title {
     font-size: 2rem;
     margin-left: 1rem;
     animation: ttlTranslate 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
@@ -11,11 +16,11 @@
     font-weight: 900;
     font-size: 2rem;
     opacity: 0.2;
-    top: 4.5rem;
+    top: -.5rem;
     animation: bkgTranslate 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
     transform: translateX(100%);
     color: aqua;
-}
+    }
 
 @keyframes bkgTranslate {
     0% {
