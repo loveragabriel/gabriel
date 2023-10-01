@@ -5,7 +5,7 @@
     width: 40%;
     background-color: transparent; /* Set background color to transparent */
     color: blue;
-    transition: .2s;
+    transition: .1s;
   }
   
   .button:hover {
