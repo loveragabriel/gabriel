@@ -1,0 +1,10 @@
+.main_text{
+    text-align: center;
+    font-size: .9rem;
+}
+
+@media (min-width:500px){
+    .main_text{
+        font-size: 1.5rem;
+    }
+}
