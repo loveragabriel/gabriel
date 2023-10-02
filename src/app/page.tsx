@@ -7,7 +7,7 @@ export default function Home() {
     <main className={styles.main} >
       <h1 className={styles.main_text}>
         <span className={styles.text_name}>Gabriel Lovera</span>
-        <span className={styles.text_title}>Desarrollador React
+        <span className={styles.text_title}>React Developer
           <span className={styles.button_call_to_action}>
             <  HeroButton />
           </span>
@@ -17,34 +17,34 @@ export default function Home() {
       </section>
       <section className={styles.text_description}>
         <span className={styles.text_1}>
-          Diseño
+          Design
         </span>
         <span className={styles.text_2}>
-          y
+          and
         </span>
         <span className={styles.text_3}>
-          desarrollo
+          build
         </span>
         <span className={styles.text_4}>
-          de
+          users
         </span>
         <span className={styles.text_5}>
-          interfaces
+          interfaces.
         </span>
-        <span className={styles.text_6}>
+        {/* <span className={styles.text_6}>
           de
         </span>
         <span className={styles.text_7}>
           usuarios.
-        </span>
+        </span> */}
         <span className={styles.text_8}>
-          Aprendo,
+          I lern,
         </span>
         <span className={styles.text_9}>
-          programo
+          code and
         </span>
         <span className={styles.text_10}>
-          itero.
+          iterate.
         </span>
       </section>
     </main>
