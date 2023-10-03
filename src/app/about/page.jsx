@@ -30,11 +30,10 @@ export default function About() {
         </p>
           <p>
             I am still learning new technologies, tools and facing new challenges that will
-            become more proficient in development.
+            become more proficient as a developer.
           </p>
         <section>
-          💆 Also  I enjoy staying active, so complement my proffesinal life
-          with others activities:
+          💆 Also I enjoy being active by doing other activities:
           <h5>Run 🏃‍♂️</h5>
           <h5>Comunities:</h5>
           <span>React Buenos Aires</span> <br />
