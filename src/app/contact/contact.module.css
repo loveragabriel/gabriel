@@ -1,0 +1,17 @@
+.contact_text{
+    word-spacing: 1.05px;
+}
+
+.nextworks{
+    display: flex;
+}
+
+.icons{
+    width: 30px;
+}
+
+@media (min-width:600px){
+    .contact_text{
+        margin: auto 2rem;
+    }
+}
