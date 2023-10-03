@@ -1,9 +1,18 @@
+mport styles from './contact.module.css'
 import Title from '@/components/pageTitle/Title'
-export default function Contact(){
-    return(
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-solid-svg-icons";
+
+export default function Contact() {
+    return (
         <>
-        <Title Title='Contact'/>
-                <p>Get in touch at: loveragabriel20@gmail.com</p>
+            <Title Title='Contact' />
+            <p clasessName={styles.contact_text}>Let's connect if you need a website for your business, a partner for your project or a talent for complete a teamwork. I would like to talk about new challenges.
+                Let's connect if you need a website for your business, a partner for your project or a talent for complete a teamwork. I would like to talk about new challenges.
+            </p>
+            <section clasessName={styles.nextworks}>
+                <FontAwesomeIcon icon={faLinkedin} className={styles.icons} />
+            </section>
         </>
     )
 }
