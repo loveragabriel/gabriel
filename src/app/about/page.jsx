@@ -11,19 +11,27 @@ export default function About() {
         <p className={styles.text_1}>
           Hello! I&lsquo;m a{" "}
           <span className={styles.react_developer}>React Developer</span>{" "}
-          oriented on building websites and web apps.
+          oriented on building responsive web sites and interactive web applications. 
+          My journey in the world of web development began with a fascination for the
+          interactivity of websites.
         </p>
         <p>
-          Learning programming is an incredible journey that has challenged me
-          to see coding in a new vision, allowing me to enjoy the learning
-          process. From the fundamentals of programming to workflow and from the
-          best practices and how to improve daily a clean code.
+          I discovered the power of building projects using reusable components in React. 
+          Which makes me feel motivated to become proficient in creating interactive, 
+          modern web applications. From building hydrating components by fetching and 
+          mapping data, as it allows me to provide more meaningful and dynamic user experiences.
+          And then to styling with CSS, always with mind into the mobile-first philosophy. 
         </p>
         <p>
-          I&lsquo;m in this process by facing new challenges, learning new
-          thecnologies and something that I love very much is the iterative
-          process of improving.
+          Each project and idea just makes true by the interactive process of design, 
+          code and test. In this sense to work with git, has provided me the organisation 
+          for tracking branch, feature and to revise errors. The git workflow makes the process
+          of coding more light and soft and easy for working with other collaborators.
         </p>
+          <p>
+            I am still learning new technologies, tools and facing new challenges that will
+            become more proficient in development.
+          </p>
         <section>
           💆 Also  I enjoy staying active, so complement my proffesinal life
           with others activities:
