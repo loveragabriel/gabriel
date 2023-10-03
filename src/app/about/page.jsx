@@ -28,7 +28,7 @@ export default function About() {
           💆 Also  I enjoy staying active, so complement my proffesinal life
           with others activities:
           <h5>Run 🏃‍♂️</h5>
-          <h6>Comunities:</h6>
+          <h5>Comunities:</h5>
           <span>React Buenos Aires</span> <br />
           <span>Mundolingo</span>
         </section>

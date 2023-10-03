@@ -17,6 +17,11 @@ const enlaces = [
 export default function NavBar() {
   return (
     <nav className={style.nav_bar}>
+      <p className={style.home_link}>
+        <Link href="/" className={style.name_link}>
+          Home
+        </Link>
+      </p>
       <ul className={style.ul}>
         {enlaces.map((link, index) => (
           <Link key={index} href={`/${link.link}`}>
@@ -24,11 +29,6 @@ export default function NavBar() {
           </Link>
         ))}
       </ul>
-      <p className={style.home_link}>
-        <Link href="/" className={style.name_link}>
-          Home
-        </Link>
-      </p>
     </nav>
   );
 }

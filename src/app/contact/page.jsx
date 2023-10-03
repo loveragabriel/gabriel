@@ -3,7 +3,7 @@ export default function Contact(){
     return(
         <>
         <Title Title='Contact'/>
-                <p>This is Contact</p>
+                <p>Get in touch at: loveragabriel20@gmail.com</p>
         </>
     )
 }
