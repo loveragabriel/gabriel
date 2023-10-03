@@ -26,7 +26,7 @@ export default function Home() {
           build
         </span>
         <span className={styles.text_4}>
-          users
+          user
         </span>
         <span className={styles.text_5}>
           interfaces.
@@ -38,10 +38,10 @@ export default function Home() {
           usuarios.
         </span> */}
         <span className={styles.text_8}>
-          I lern,
+          Learn,
         </span>
         <span className={styles.text_9}>
-          code and
+          code,
         </span>
         <span className={styles.text_10}>
           iterate.
