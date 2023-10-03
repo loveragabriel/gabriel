@@ -2,7 +2,7 @@
     cursor: pointer;
     border-radius: 50px;
     border: solid 0.3px white;
-    width: 40%;
+    width: max-content;
     background-color: transparent; /* Set background color to transparent */
     color: blue;
     transition: .1s;
@@ -27,12 +27,8 @@
   }
 
   @media (min-width:500px){
-    .button{
-        width: 40%;
-    }
+  
   }
   @media (min-width:1000px){
-    .button{
-        width: 20%;
-    }
+  
   }
