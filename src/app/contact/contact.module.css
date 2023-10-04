@@ -4,11 +4,14 @@
 
 .nextworks{
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .icons{
     width: 30px;
     color: white;
+    margin: 10px;
 }
 
 @media (min-width:600px){

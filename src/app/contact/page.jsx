@@ -9,13 +9,16 @@ export default function Contact() {
     return (
         <>
             <Title Title='Contact' />
-            <p clasessName={styles.contact_text}>Let&lsquo;s connect if you need a website for your business, a partner for your project or a talent for complete a teamwork. I would like to talk about new challenges.
+            <p className={styles.contact_text}>Let&lsquo;s connect if you need a website for your business, a partner for your project or a talent for complete a teamwork. I would like to talk about new challenges.
             </p>
-            <section clasessName={styles.nextworks}>
+            <div className={styles.nextworks}>
+                <a href='https://www.linkedin.com/in/loveragabriel/' target='_blank'>
             <FontAwesomeIcon icon={faLinkedin} className={styles.icons} />
- 
-        <FontAwesomeIcon icon={faGitAlt} className={styles.icons} />
-           </section>
+            </a>
+            <a href='https://github.com/loveragabriel/' target='_blank'>
+           <FontAwesomeIcon icon={faGitAlt} className={styles.icons} />
+           </a>
+           </div>
         </>
     )
 }
