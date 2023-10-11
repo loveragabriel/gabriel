@@ -14,6 +14,20 @@
     margin: 10px;
 }
 
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 1re auto;
+}
+
+.inputForm,
+.inputForm,
+.inputForm{
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
 @media (min-width:600px){
     .contact_text{
         margin: auto 2rem;
