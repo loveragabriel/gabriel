@@ -9,6 +9,9 @@ import {
   faGitAlt,
 } from "@fortawesome/free-brands-svg-icons";
 
+
+
+
 export default function Projects() {
   return (
     <>
@@ -21,15 +24,25 @@ export default function Projects() {
           <div className={styles.cards}>
             <h5>CRUD PROJECT</h5>
             <p>Web app for posting, updating, reading and deleting products.</p>
-            <a href="https://github.com/loveragabriel/CRUD-web-app" target="_blank">Gitub Code</a>
-            <a href="https://loveragabriel.github.io/CRUD-web-app/" target="_blank">Deploy</a>
-
+            <a
+              href="https://github.com/loveragabriel/CRUD-web-app"
+              target="_blank"
+            >
+              Gitub Code
+            </a>
+            <a
+              href="https://loveragabriel.github.io/CRUD-web-app/"
+              target="_blank"
+            >
+              Deploy
+            </a>
           </div>
           <div className={styles.cards}>
             <h5>Proffesional Website</h5>
             <p>Website for Dental Services</p>
-            <a href="https://github.com/loveragabriel/maja-app" target="_blank">Gitub Code</a>
-
+            <a href="https://github.com/loveragabriel/maja-app" target="_blank">
+              Gitub Code
+            </a>
           </div>
         </section>
       </div>
