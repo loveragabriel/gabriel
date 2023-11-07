@@ -27,15 +27,29 @@
     width: 100vw;
 }
 
+.cards_links{
+    display:  flex;
+    justify-content:space-around;
+    text-decoration: none;
+}
+.cards_links a:hover{
+    scale: 1.1;
+    color: orange;
+}
+
+.cards_links a {
+    text-decoration: none;
+}
+
 .icons_container{
-    position: absolute;
-    bottom: 10px;
+    position: relative;
+    bottom: 0px;
     width: 100%;
     left: 0;
     margin-top: 5rem 0rem 0rem 0rem;
     animation: slideUp 1.5s forwards cubic-bezier(0.785, 0.135, 0.15, 0.86);
     animation-delay: 2s;
-    transform: translateY(-50%);
+    transform: translateY(-40%);
     opacity: 0;
     display: flex;
     justify-content: center;

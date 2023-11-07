@@ -1,6 +1,8 @@
 "use client";
 import styles from "./contact.module.css";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function ContactForm() {
   const [dataForm, setDataForm] = useState({
     name: "",
@@ -11,17 +13,27 @@ export default function ContactForm() {
   const handleChange = (event) => {
     setDataForm({
       ...dataForm,
-      name: event.target.value,
+      [event.target.name]: event.target.value,
     });
   };
 
-  const sendEmail = () => {
-    const { ...name } = dataForm;
-    alert(dataForm.name, dataForm.email, dataForm.description);
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE}`,
+        `${process.env.NEXT_PUBLIC_TEMPLATE}`,
+        e.target,
+        `${process.env.NEXT_PUBLIC_EMAILJS_API_KEY}`
+      )
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+    alert("Consulta enviada correctamente");
+    e.target.reset();
   };
 
   return (
-    <form className={styles.form}>
+    <form className={styles.form} onSubmit={sendEmail}>
       <label className={styles.inputForm}>
         {" "}
         Name
@@ -50,7 +62,7 @@ export default function ContactForm() {
           onChange={handleChange}
         />
       </label>
-      <button onClick={sendEmail}>Send</button>
+      <button type="submit">Send</button>
     </form>
   );
 }

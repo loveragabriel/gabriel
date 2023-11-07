@@ -1,5 +1,6 @@
 .contact_text{
     word-spacing: 1.05px;
+    margin-bottom: 3rem;
 }
 
 .nextworks{
@@ -17,19 +18,36 @@
 .form{
     display: flex;
     flex-direction: column;
-    margin: 1re auto;
+    margin: 2re auto;
 }
 
-.inputForm,
-.inputForm,
 .inputForm{
     display: flex;
     flex-direction: column;
-    margin: 0.5rem;
 }
+
+.inputForm:first-child label {
+    margin-top: 2rem;
+  }
+
+.inputForm input{
+    margin-top: 0.4rem;
+    padding: 0.5rem;
+}
+
 
 @media (min-width:600px){
     .contact_text{
         margin: auto 2rem;
     }
+}
+
+@media (min-width:500px){
+    .form{
+        align-items: center;
+    }
+
+    .form input {
+        width: 50vw; /* Corrected 'form [input]' to '.form input' */
+      }
 }
