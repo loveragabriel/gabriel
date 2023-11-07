@@ -28,7 +28,6 @@ export default function ContactForm() {
       )
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
-    alert("Consulta enviada correctamente");
     e.target.reset();
   };
 
@@ -62,7 +61,7 @@ export default function ContactForm() {
           onChange={handleChange}
         />
       </label>
-      <button type="submit">Send</button>
+      <button className={styles.send_button} type="submit">Send</button>
     </form>
   );
 }

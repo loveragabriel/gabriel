@@ -35,6 +35,9 @@
     padding: 0.5rem;
 }
 
+.send_button{
+    margin: 1rem;
+}
 
 @media (min-width:600px){
     .contact_text{
