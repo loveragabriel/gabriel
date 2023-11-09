@@ -19,16 +19,24 @@ export default function ContactForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE}`,
-        `${process.env.NEXT_PUBLIC_TEMPLATE}`,
-        e.target,
-        `${process.env.NEXT_PUBLIC_EMAILJS_API_KEY}`
-      )
-      .then((response) => console.log(response))
-      .catch((error) => console.log(error));
-    e.target.reset();
+    if (
+      dataForm.name === "" ||
+      dataForm.email === "" ||
+      dataForm.description === ""
+    ) {
+      alert("Complete los datos");
+    } else {
+      emailjs
+        .sendForm(
+          `${process.env.NEXT_PUBLIC_EMAILJS_SERVICE}`,
+          `${process.env.NEXT_PUBLIC_TEMPLATE}`,
+          e.target,
+          `${process.env.NEXT_PUBLIC_EMAILJS_API_KEY}`
+        )
+        .then((response) => console.log(response))
+        .catch((error) => console.log(error));
+      e.target.reset();
+    }
   };
 
   return (
@@ -61,7 +69,9 @@ export default function ContactForm() {
           onChange={handleChange}
         />
       </label>
-      <button className={styles.send_button} type="submit">Send</button>
+      <button className={styles.send_button} type="submit">
+        Send
+      </button>
     </form>
   );
 }
