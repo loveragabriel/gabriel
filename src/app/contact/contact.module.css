@@ -15,6 +15,11 @@
     margin: 10px;
 }
 
+.form_title{
+    display: flex;
+    justify-content: center;
+}
+
 .form {
     display: flex;
     flex-direction: column;
@@ -24,6 +29,7 @@
 .inputForm {
     display: flex;
     flex-direction: column;
+    margin-top: 1rem;
 }
 
 .inputForm:first-child label {

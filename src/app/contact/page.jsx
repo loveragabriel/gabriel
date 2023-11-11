@@ -8,10 +8,9 @@ export default function Contact() {
     <>
       <Title Title="Contact" />
       <p className={styles.contact_text}>
-        Let&lsquo;s connect if you need a website for your business, a partner
-        for your project or a talent for complete a teamwork. I would like to
-        talk about new challenges.
+        Let&lsquo;s connect if you need a website for your business, a partner for your project, or talent to complete a teamwork. I would like to talk about new challenges.
       </p>
+      <h3 className={styles.form_title}>Send a message</h3>
       <ContactForm/>
       <div className={styles.nextworks}>
         <a href="https://www.linkedin.com/in/loveragabriel/" target="_blank">

@@ -7,7 +7,7 @@ export default function ContactForm() {
   const [dataForm, setDataForm] = useState({
     name: "",
     email: "",
-    description: "",
+    message: "",
   });
 
   const handleChange = (event) => {
@@ -22,9 +22,9 @@ export default function ContactForm() {
     if (
       dataForm.name === "" ||
       dataForm.email === "" ||
-      dataForm.description === ""
+      dataForm.message === ""
     ) {
-      alert("Complete los datos");
+      alert("Kindly fill out all the required fields on the form");
     } else {
       emailjs
         .sendForm(
@@ -64,8 +64,8 @@ export default function ContactForm() {
         Description
         <input
           type="text"
-          placeholder="Description"
-          name="description"
+          placeholder="Message"
+          name="message"
           onChange={handleChange}
         />
       </label>
